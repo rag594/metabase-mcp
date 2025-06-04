@@ -1,0 +1,14 @@
+ {
+    "servers": {
+        "metabase-mcp-server": {
+                "type": "stdio",
+                "command": "PATH_TO_BINARY",
+                "args": [],
+                "env": {
+                    "METABASE_DATABASE_ID": "<databaseId>",
+                    "METABASE_HOST":"<HOST>",
+                    "METABASE_COOKIES":"<Cookies>"
+                }
+            }
+    }
+ }
