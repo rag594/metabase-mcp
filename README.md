@@ -30,7 +30,7 @@ This MCP server provides a bridge between AI assistants (like Claude) and Metaba
 git clone <repository-url>
 cd metabase-mcp
 go mod tidy
-go build -o metabase-mcp main.go
+go build -o metabase-mcp
 ```
 
 ### 2. Get Metabase Authentication Cookies
@@ -50,7 +50,7 @@ The cookies should include at minimum:
 
 1. In Metabase, go to Admin → Databases
 2. Click on your target database
-3. Note the database ID from the URL (e.g., `/admin/databases/31` → ID is `31`)
+3. Note the database ID from the URL
 
 ## Configuration
 
@@ -66,7 +66,7 @@ Create or update `.vscode/mcp.json` in your workspace:
       "command": "/path/to/your/metabase-mcp/metabase-mcp",
       "args": [],
       "env": {
-        "METABASE_DATABASE_ID": "31",
+        "METABASE_DATABASE_ID": "1",
         "METABASE_HOST": "https://your-metabase-instance.com",
         "METABASE_COOKIES": "your-complete-cookie-string-here"
       }
@@ -79,7 +79,7 @@ Create or update `.vscode/mcp.json` in your workspace:
 
 | Variable | Description | Required | Example |
 |----------|-------------|----------|---------|
-| `METABASE_DATABASE_ID` | Target database ID in Metabase | Yes | `31` |
+| `METABASE_DATABASE_ID` | Target database ID in Metabase | Yes | `1` |
 | `METABASE_HOST` | Metabase instance URL | Yes | `https://metabase.example.com` |
 | `METABASE_COOKIES` | Authentication cookies | Yes | `metabase.SESSION=abc123;...` |
 
