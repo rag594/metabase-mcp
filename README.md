@@ -94,7 +94,7 @@ Create or update `.vscode/mcp.json` in your workspace:
 
 Example queries you can ask:
 ```
-"What's the table size of VKYCRequest?"
+"What's the table size of User?"
 "Show me the top 10 users by transaction count"
 "Get the latest records from the payments table"
 ```
